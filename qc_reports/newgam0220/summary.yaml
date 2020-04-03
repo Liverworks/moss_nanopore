@@ -1,0 +1,57 @@
+input file: /home/anna/laba/moss5G.txt
+All reads:
+  total.gigabases: 1.4433776
+  total.reads: 1315620
+  N50.length: 1315.0
+  mean.length: 1097.1
+  median.length: 911.0
+  max.length: 90573.0
+  mean.q: 8.9
+  median.q: 9.2
+  reads:
+    '>10kb': 91
+    '>20kb': 36
+    '>50kb': 5
+    '>100kb': 0
+    '>200kb': 0
+    '>500kb': 0
+    '>1m': 0
+    ultralong: 0.0
+  gigabases:
+    '>10kb': 0.0019567
+    '>20kb': 0.0012183
+    '>50kb': 0.0003702
+    '>100kb': 0.0
+    '>200kb': 0.0
+    '>500kb': 0.0
+    '>1m': 0.0
+    ultralong: 0.0
+Q>=7:
+  total.gigabases: 1.3594395
+  total.reads: 1208800
+  N50.length: 1326.0
+  mean.length: 1124.6
+  median.length: 939.0
+  max.length: 14303.0
+  mean.q: 9.2
+  median.q: 9.3
+  reads:
+    '>10kb': 9
+    '>20kb': 0
+    '>50kb': 0
+    '>100kb': 0
+    '>200kb': 0
+    '>500kb': 0
+    '>1m': 0
+    ultralong: 0.0
+  gigabases:
+    '>10kb': 9.9528e-05
+    '>20kb': 0.0
+    '>50kb': 0.0
+    '>100kb': 0.0
+    '>200kb': 0.0
+    '>500kb': 0.0
+    '>1m': 0.0
+    ultralong: 0.0
+notes: ultralong reads refers to the largest set of reads with N50>100KB
+

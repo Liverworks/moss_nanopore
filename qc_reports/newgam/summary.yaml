@@ -1,0 +1,57 @@
+input file: /home/anna/laba/sequencing_summary_Full1.txt
+All reads:
+  total.gigabases: 0.9719664
+  total.reads: 1010714
+  N50.length: 1175.0
+  mean.length: 961.7
+  median.length: 809.0
+  max.length: 72013.0
+  mean.q: 8.8
+  median.q: 9.0
+  reads:
+    '>10kb': 17
+    '>20kb': 4
+    '>50kb': 1
+    '>100kb': 0
+    '>200kb': 0
+    '>500kb': 0
+    '>1m': 0
+    ultralong: 0.0
+  gigabases:
+    '>10kb': 0.0003504
+    '>20kb': 0.0001658
+    '>50kb': 7.2013e-05
+    '>100kb': 0.0
+    '>200kb': 0.0
+    '>500kb': 0.0
+    '>1m': 0.0
+    ultralong: 0.0
+Q>=7:
+  total.gigabases: 0.9154107
+  total.reads: 923801
+  N50.length: 1193.0
+  mean.length: 990.9
+  median.length: 832.0
+  max.length: 15063.0
+  mean.q: 9.1
+  median.q: 9.1
+  reads:
+    '>10kb': 5
+    '>20kb': 0
+    '>50kb': 0
+    '>100kb': 0
+    '>200kb': 0
+    '>500kb': 0
+    '>1m': 0
+    ultralong: 0.0
+  gigabases:
+    '>10kb': 6.3251e-05
+    '>20kb': 0.0
+    '>50kb': 0.0
+    '>100kb': 0.0
+    '>200kb': 0.0
+    '>500kb': 0.0
+    '>1m': 0.0
+    ultralong: 0.0
+notes: ultralong reads refers to the largest set of reads with N50>100KB
+
