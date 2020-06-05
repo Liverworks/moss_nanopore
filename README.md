@@ -2,7 +2,7 @@
 
 ### Laboratory of Functional Genomics and Proteomics, Institute of Bioorganic Chemistry, Moscow
 
-Here we analyzed its transcriptome of two ontogenesis stages (protonemata and gametophores) using Nanopore direct RNA sequencing. The differential expression analysis was conducted using featureCounts and DeSeq2. PolyA tail length and nucleotide modifications were found using Nanopolish and Nanocompore.
+Here we analyzed its transcriptome of two ontogenesis stages (protonemata and gametophores) using Nanopore direct RNA sequencing. The differential expression analysis was conducted using featureCounts and DeSeq2. PolyA tail length and nucleotide modifications were found using Nanopolish and Nanocompore. Also, lncRNA isoforms expression was proved with SQANTI2.
 
 - Pipeline information is in NOTEBOOK.doc
 - Sequence quality control reports are in *qc_reports*
