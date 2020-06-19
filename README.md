@@ -1,4 +1,4 @@
-# Nanopore sequence transcriptome data analysis of moss *Physcomitrella patens
+# Nanopore sequence transcriptome data analysis of moss Physcomitrella patens
 
 ### Laboratory of Functional Genomics and Proteomics, Institute of Bioorganic Chemistry, Moscow
 
