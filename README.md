@@ -2,15 +2,19 @@
 
 ### Laboratory of Functional Genomics and Proteomics, Institute of Bioorganic Chemistry, Moscow
 
-Last update: whole analysis pipline added in *full_notebook.ipynb* for better convinience.
+**Last update**: whole analysis pipeline added in *full_notebook.ipynb* for greater convenience.
 
-Here we analyzed *Physcomitrella patens* transcriptome of two ontogenesis stages (protonemata and gametophores) using Nanopore direct RNA sequencing. The differential expression analysis was conducted using featureCounts and DeSeq2. PolyA tail length and nucleotide modifications were found using Nanopolish and Nanocompore. Also, lncRNA isoforms expression was proved with SQANTI2.
+Here we analyzed *Physcomitrella patens* transcriptome of two ontogenesis stages (protonemata and gametophores) using Nanopore direct RNA sequencing. The differential expression analysis was conducted using featureCounts and DeSeq2. PolyA tail length and nucleotide modifications were found using Nanopolish and Nanocompore. Also, the lncRNA isoforms expression was proved with SQANTI2.
 
 Differential expression analysis showed that the two stages were extremely different (90% of variation). Genes involved in translation are more active in protonemata, while more active transcription factors were active in gametophores.
 
-Weak negative correlation between gene polyA tail length and number of reads was observed. 579 genes had longer polyA tails in protonemata while only 21 had longer tails in gametophores. 86 of these genes were differentially expressed. Most of them were active in protonemata.
+A weak negative correlation between gene polyA tail length and number of reads was observed. 579 genes had longer polyA tails in protonemata while only 21 had longer tails in gametophores. 86 of these genes were differentially expressed. Most of them were active in protonemata.
+
 Only about 140 genes had enough coverage for base modifications analysis with Nanocompore. 28 of them had possible modification sites, and most of the sites were located in 3`-UTR regions. It is consistent with earlier studies of Arabidopsis (Parker et al. ELife 2020).
+
 We also aimed to prove the expression of lncRNAs. Presence of 3100 isoforms was proved using SQANTI2 out of 19000 annotated lncRNAs. About 350 more isoforms were only slightly different from the annotation. They have the same splice-sites but may be shorter at the ends of the sequences.
+
+To sum up, direct RNA sequencing is a useful approach for plant transcriptomics analysis. It allows not only to study differential expression but also epitranscriptomics features.
 
 - Pipeline information is in full_notebook.ipynb or as well in NOTEBOOK.doc
 - Sequence quality control reports are in *qc_reports*
