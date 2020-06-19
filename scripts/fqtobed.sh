@@ -1,6 +1,6 @@
 #!/bin/bash
 
-~/minimap2/minimap2 -ax splice -uf -k14 -G2k --secondary=no ~/minimap2/Ppatens_318_v3.fa /home/andrey/anna/merged_lncRNAs_locuses_above200_filtered_new.fasta > $1.sam;
+~/minimap2/minimap2 -ax splice -uf -k14 -G2k --secondary=no ~/minimap2/Ppatens_318_v3.fa /home/andrey/$1 > $1.sam;
 samtools flagstat $1.sam;
 samtools view -bS $1.sam > $1.bam; 
 samtools sort $1.bam -o $1_sorted.bam;

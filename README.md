@@ -1,12 +1,20 @@
-# Nanopore sequence transcriptome data analysis of moss Physcomitrella patens
+# Nanopore sequence transcriptome data analysis of moss *Physcomitrella patens
 
 ### Laboratory of Functional Genomics and Proteomics, Institute of Bioorganic Chemistry, Moscow
 
-Here we analyzed its transcriptome of two ontogenesis stages (protonemata and gametophores) using Nanopore direct RNA sequencing. The differential expression analysis was conducted using featureCounts and DeSeq2. PolyA tail length and nucleotide modifications were found using Nanopolish and Nanocompore. Also, lncRNA isoforms expression was proved with SQANTI2.
+Last update: whole analysis pipline added in *full_notebook.ipynb* for better convinience.
 
-- Pipeline information is in NOTEBOOK.doc
+Here we analyzed *Physcomitrella patens* transcriptome of two ontogenesis stages (protonemata and gametophores) using Nanopore direct RNA sequencing. The differential expression analysis was conducted using featureCounts and DeSeq2. PolyA tail length and nucleotide modifications were found using Nanopolish and Nanocompore. Also, lncRNA isoforms expression was proved with SQANTI2.
+
+Differential expression analysis showed that the two stages were extremely different (90% of variation). Genes involved in translation are more active in protonemata, while more active transcription factors were active in gametophores.
+
+Weak negative correlation between gene polyA tail length and number of reads was observed. 579 genes had longer polyA tails in protonemata while only 21 had longer tails in gametophores. 86 of these genes were differentially expressed. Most of them were active in protonemata.
+Only about 140 genes had enough coverage for base modifications analysis with Nanocompore. 28 of them had possible modification sites, and most of the sites were located in 3`-UTR regions. It is consistent with earlier studies of Arabidopsis (Parker et al. ELife 2020).
+We also aimed to prove the expression of lncRNAs. Presence of 3100 isoforms was proved using SQANTI2 out of 19000 annotated lncRNAs. About 350 more isoforms were only slightly different from the annotation. They have the same splice-sites but may be shorter at the ends of the sequences.
+
+- Pipeline information is in full_notebook.ipynb or as well in NOTEBOOK.doc
 - Sequence quality control reports are in *qc_reports*
-- Used scripts are in *scripts*, their usage is in NOTEBOOK.doc
+- Used scripts are in *scripts*, their usage is in the notebook
 
 ### References
 
@@ -19,5 +27,6 @@ Here we analyzed its transcriptome of two ontogenesis stages (protonemata and ga
 - Quinlan, A.R., Hall, I.M., 2010. BEDTools: a flexible suite of utilities for comparing genomic features. Bioinformatics 26, 841–842. https://doi.org/10.1093/bioinformatics/btq033
 - Tardaguila, M., de la Fuente, L., Marti, C., Pereira, C., Pardo-Palacios, F.J., del Risco, H., Ferrell, M., Mellado, M., Macchietto, M., Verheggen, K., Edelmann, M., Ezkurdia, I., Vazquez, J., Tress, M., Mortazavi, A., Martens, L., Rodriguez-Navarro, S., Moreno-Manzano, V., Conesa, A., 2018. Corrigendum: SQANTI: extensive characterization of long-read transcript sequences for quality control in full-length transcriptome identification and quantification. Genome Res. 28, 1096–1096. https://doi.org/10.1101/gr.239137.118
 - https://github.com/jts/nanopolish
-- https://github.com/Magdoll/SQANTI2
+- https://github.com/Magdoll/SQANTI
+- https://github.com/roblanf/minion_qc
 - https://phytozome.jgi.doe.gov/pz/portal.html
